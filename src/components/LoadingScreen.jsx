@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
 
-  const fullText =
-    "\n> Loading...      .  . . \n> Loading some more...    . . \n> ...   . .      .\n> It’s not broken, it’s just dramatic!\n> I swear its almost done!! wait!! don't close it!!  \n";
+  const fullText = `\n> Loading...      .  . . \n> Loading... .   .\n> Loa...\n> just kidding!> `;
 
   useEffect(() => {
     let index = -1;
@@ -43,8 +42,8 @@ export const LoadingScreen = ({ onComplete }) => {
           {text} <span className="animate-blink ml-1"> | </span>
         </div>
 
-        <div className="w-[200px] h-[2px] bg-grey-800 rounded relative overflow-hidden mb-6">
-          <div className="w-[40%] h-full bg-blue-500 shadow-[0_0_15_#3b82f6] animate-loading-bar" />
+        <div className="w-[50%] h-[2px] bg-grey-800 rounded relative overflow-hidden mb-6 mt-6">
+          <div className="w-[400%] h-full bg-pink-700 shadow-[0_0_15_#e1144c] animate-loading-bar" />
         </div>
       </div>
 
