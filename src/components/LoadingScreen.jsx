@@ -4,7 +4,7 @@ export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
 
   const fullText =
-    "\n<Loading...       \n<Loading some more...\n<it’s not broken, it’s just dramatic!\n<I swear its almost done!! wait!! don't close it!!\n/>";
+    "\n> Loading...      .  . . \n> Loading some more...    . . \n> ...   . .      .\n> It’s not broken, it’s just dramatic!\n> I swear its almost done!! wait!! don't close it!!  \n";
 
   useEffect(() => {
     let index = -1;
@@ -17,9 +17,9 @@ export const LoadingScreen = ({ onComplete }) => {
         clearInterval(interval);
         setTimeout(() => {
           onComplete();
-        }, 3000);
+        }, 2000);
       }
-    }, 100);
+    }, 200);
 
     // Keyboard event handler
     const handleKeyDown = (event) => {
