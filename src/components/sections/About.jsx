@@ -1,27 +1,31 @@
+import { RevealOnScroll } from "../RevealOnScroll";
+
 export const About = () => {
   return (
     <section
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#e1144c] to-pink-700 bg-clip-text text-transparent text-center">
-          About Me
-        </h2>
+      <RevealOnScroll>
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#e1144c] to-pink-700 bg-clip-text text-transparent text-center">
+            About Me
+          </h2>
 
-        <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-          <p className="text-gray-300 mb-6">
-            I'm a front-end developer, designer, and artist - which is a fancy
-            way of saying I like making things look good and work well.{" "}
-          </p>
-          <Skills />
-        </div>
+          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+            <p className="text-gray-300 mb-6">
+              I'm a front-end developer, designer, and artist - which is a fancy
+              way of saying I like making things look good and work well.{" "}
+            </p>
+            <Skills />
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-          <Education />
-          <WorkExpirience />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <Education />
+            <WorkExpirience />
+          </div>
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   );
 };
