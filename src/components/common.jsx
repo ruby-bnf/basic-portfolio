@@ -62,8 +62,12 @@ export const SecondaryButton = ({ children, navTo, onClick, className }) => {
     </a>
   );
 };
-
-export const TertiaryButton = ({ children, navTo, onClick, className }) => {
+export const TertiaryButton = ({
+  children,
+  navTo,
+  onClick,
+  className = "",
+}) => {
   const handleClick = (e) => {
     if (onClick) {
       e.preventDefault();
@@ -75,7 +79,7 @@ export const TertiaryButton = ({ children, navTo, onClick, className }) => {
     <a
       href={navTo}
       onClick={handleClick}
-      className={`cursor-pointer hover:text-pink-700 border py-1 px-4 rounded font-medium transition-all duration-200 text-gray-400 hover:border hover:border-pink-700 transition-colors cursor-pointer${className}`}
+      className={`cursor-pointer hover:text-pink-700 border py-1 px-3 rounded text-sm font-medium transition-all duration-200 text-gray-400 hover:border-pink-700 ${className}`}
     >
       {children}
     </a>

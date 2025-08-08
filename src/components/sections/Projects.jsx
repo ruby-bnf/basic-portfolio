@@ -62,7 +62,7 @@ const Project = ({ name, description, skills, link }) => {
         ))}
       </div>
       {link && (
-        <div className="flex justify-center items-center mt-4">
+        <div className="flex justify-end items-center mt-8">
           <TertiaryButton navTo={link}>View project</TertiaryButton>
         </div>
       )}
