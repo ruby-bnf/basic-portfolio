@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { SecondaryButton } from "./common";
 
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
@@ -47,12 +48,12 @@ export const LoadingScreen = ({ onComplete }) => {
         </div>
       </div>
 
-      <button
-        className="absolute bottom-4 right-4 border border-orange-600/60 text-orange-600 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(202,76,30,0.1)] hover:bg-orange-500/10 cursor-pointer"
+      <SecondaryButton
+        className="fixed bottom-4 right-4 mb-0"
         onClick={() => onComplete()}
       >
-        skip animation
-      </button>
+        Skip animation
+      </SecondaryButton>
     </div>
   );
 };

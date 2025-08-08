@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { NavPrimaryButton, NavSecondaryButton } from "./common";
+import { PrimaryButton, SecondaryButton } from "../common";
 
 export const Home = () => {
   return (
@@ -19,12 +19,8 @@ export const Home = () => {
             together.
           </p>
           <div className="flex justify-center space-x-4">
-            <NavPrimaryButton navTo={"#projects"}>
-              View Projects
-            </NavPrimaryButton>
-            <NavSecondaryButton navTo={"#contact"}>
-              Contact Me
-            </NavSecondaryButton>
+            <PrimaryButton navTo={"#projects"}>View Projects</PrimaryButton>
+            <SecondaryButton navTo={"#contact"}>Contact Me</SecondaryButton>
           </div>
         </div>
       </RevealOnScroll>

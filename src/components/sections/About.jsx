@@ -1,14 +1,14 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { SectionTitle, SkillItem } from "./common";
+import { SectionTitle, SkillItem } from "../common";
 
 export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-10"
     >
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4">
           <SectionTitle>About Me</SectionTitle>
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">

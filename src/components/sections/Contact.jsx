@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { SectionTitle } from "./common";
+import { SectionTitle } from "../common";
 
 export const Contact = () => {
   return (

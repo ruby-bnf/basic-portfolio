@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { SectionTitle, SkillItem } from "./common";
+import { SectionTitle, SkillItem, TertiaryButton } from "../common";
 
 export const Projects = () => {
   return (
@@ -61,21 +61,11 @@ const Project = ({ name, description, skills, link }) => {
           <SkillItem key={key}>{tech}</SkillItem>
         ))}
       </div>
-      {link && <StyledButton navTo={link}>View project</StyledButton>}
-    </div>
-  );
-};
-
-const StyledButton = ({ children, navTo }) => {
-  return (
-    <div className="flex justify-center items-center mt-4">
-      {" "}
-      <a
-        href={navTo}
-        className="hover:text-pink-700 border py-1 px-4 rounded font-medium transition-all duration-200 text-gray-400 hover:border hover:border-pink-700 transition-colors cursor-pointer"
-      >
-        View project
-      </a>
+      {link && (
+        <div className="flex justify-center items-center mt-4">
+          <TertiaryButton navTo={link}>View project</TertiaryButton>
+        </div>
+      )}
     </div>
   );
 };
