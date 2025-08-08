@@ -4,7 +4,7 @@ export const NavbarItem = ({ name, componentId }) => {
   return (
     <a
       href={`#${componentId}`} // Correct: Add hash here
-      className="text-grey-300 hover:text-white transition-colors"
+      className="text-gray-300 hover:text-white transition-colors"
     >
       {name}
     </a>

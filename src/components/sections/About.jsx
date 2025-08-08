@@ -10,7 +10,7 @@ export const About = () => {
         </h2>
 
         <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-          <p className="text-grey-300 mb-6">
+          <p className="text-gray-300 mb-6">
             I'm a front-end developer, designer, and artist - which is a fancy
             way of saying I like making things look good and work well.{" "}
           </p>
@@ -50,7 +50,7 @@ const SkillsList = ({ name, skills }) => {
   return (
     <div className="rounded-xl p-6 hover:-translate-y-1 transition-aall">
       <h3 className="text-xl font-bold mb-4">{name}</h3>
-      <div className="flex flex-wrap gap2">
+      <div className="flex flex-wrap gap-2">
         {skills.map((tech, key) => {
           return (
             <span
@@ -79,7 +79,7 @@ const Education = () => {
   return (
     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
       <h3 className="text-xl font-bold mb-4">Education</h3>
-      <ul className="list-disc list-inside text-grey-300 space-y-2">
+      <ul className="list-disc list-inside text-gray-300 space-y-2">
         <li>
           <Study
             institution={"Vrije Universiteit Amsterdam"}
@@ -103,7 +103,7 @@ const Education = () => {
 const WorkExpirience = () => {
   const Position = ({ company, date, description }) => {
     return (
-      <div className="space-grey-4 text-grey-100 mb-4">
+      <div className="space-gray-4 text-gray-100 mb-4">
         <h4 className="text-pink-700 font-semibold">{`${company} (${date})`}</h4>
         <p className="whitespace-pre-line text-xs">{description}</p>
       </div>
@@ -113,7 +113,7 @@ const WorkExpirience = () => {
   return (
     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
       <h3 className="text-xl font-bold mb-4">Work Experience</h3>
-      <div className="space-grey-4 text-grey-100">
+      <div className="space-gray-4 text-gray-100">
         <div>
           <Position
             company={"Software engineer at Mendix"}

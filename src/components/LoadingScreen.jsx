@@ -36,13 +36,13 @@ export const LoadingScreen = ({ onComplete }) => {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-black text-grey-100 relative">
+    <div className="fixed inset-0 z-50 bg-black text-gray-100 relative">
       <div className="flex flex-col items-center justify-center h-screen">
         <div className="whitespace-pre-line mb-4 text-4xl font-mono font-bold">
           {text} <span className="animate-blink ml-1"> | </span>
         </div>
 
-        <div className="w-[50%] h-[2px] bg-grey-800 rounded relative overflow-hidden mb-6 mt-6">
+        <div className="w-[50%] h-[2px] bg-gray-800 rounded relative overflow-hidden mb-6 mt-6">
           <div className="w-[400%] h-full bg-pink-700 shadow-[0_0_15_#e1144c] animate-loading-bar" />
         </div>
       </div>
