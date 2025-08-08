@@ -90,9 +90,9 @@ const Education = () => {
 
         <li>
           <Study
-            institution={"Design and Illustration Study"}
+            course={"Design and Illustration Study"}
             date={"2022 - 2024"}
-            course={"Willem de Kooning Academie"}
+            institution={"Willem de Kooning Academie"}
           />
         </li>
       </ul>

@@ -37,34 +37,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             <NavbarItem name="About" componentId="about" />
             <NavbarItem name="Projects" componentId="projects" />
             <NavbarItem name="Contact" componentId="contact" />
-
-            {/* <a
-              href="#home"
-              className="text-grey-300 hover:text-white transition-colors"
-            >
-              Home
-            </a>
-
-            <a
-              href="#about"
-              className="text-grey-300 hover:text-white transition-colors"
-            >
-              About
-            </a>
-
-            <a
-              href="#projects"
-              className="text-grey-300 hover:text-white transition-colors"
-            >
-              Projects
-            </a>
-
-            <a
-              href="#contact"
-              className="text-grey-300 hover:text-white transition-colors"
-            >
-              Contact
-            </a> */}
           </div>
         </div>
       </div>
