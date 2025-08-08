@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { NavPrimaryButton, NavSecondaryButton } from "./common";
 
 export const Home = () => {
   return (
@@ -18,19 +19,12 @@ export const Home = () => {
             together.
           </p>
           <div className="flex justify-center space-x-4">
-            <a
-              href="#projects"
-              className="bg-[#e1144c] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(202,76,30,0.4)]"
-            >
+            <NavPrimaryButton navTo={"#projects"}>
               View Projects
-            </a>
-
-            <a
-              href="#projects"
-              className="border border-[#e1144c]/60 text-[#e1144c] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(202,76,30,0.1)] hover:bg-[#e1144c]/50 hover:text-white"
-            >
+            </NavPrimaryButton>
+            <NavSecondaryButton navTo={"#contact"}>
               Contact Me
-            </a>
+            </NavSecondaryButton>
           </div>
         </div>
       </RevealOnScroll>

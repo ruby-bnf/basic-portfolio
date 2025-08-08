@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { SectionTitle, SkillItem } from "./common";
 
 export const About = () => {
   return (
@@ -8,10 +9,7 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#e1144c] to-pink-700 bg-clip-text text-transparent text-center">
-            About Me
-          </h2>
-
+          <SectionTitle>About Me</SectionTitle>
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
               I'm a front-end developer, designer, and artist - which is a fancy
@@ -30,11 +28,15 @@ export const About = () => {
   );
 };
 
-const Skills = (skills) => {
+const SubTitle = ({ children }) => {
+  return <h3 className="text-xl font-bold mb-4">{children}</h3>;
+};
+
+const Skills = () => {
   const frontEndSkills = [
     "React",
     "TypeScript",
-    "Tailwing",
+    "Tailwind",
     "JavaScript",
     "C#",
     "CSS",
@@ -52,19 +54,12 @@ const Skills = (skills) => {
 
 const SkillsList = ({ name, skills }) => {
   return (
-    <div className="rounded-xl p-6 hover:-translate-y-1 transition-aall">
-      <h3 className="text-xl font-bold mb-4">{name}</h3>
+    <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+      <SubTitle>{name}</SubTitle>
       <div className="flex flex-wrap gap-2">
-        {skills.map((tech, key) => {
-          return (
-            <span
-              key={key}
-              className="bg-pink-700/10 text-pink-700 py-1 px-3 rounded-full text-sm hover:bg-[#e1144c]/20  transition"
-            >
-              {tech}
-            </span>
-          );
-        })}
+        {skills.map((tech, index) => (
+          <SkillItem key={index}>{tech}</SkillItem>
+        ))}
       </div>
     </div>
   );
@@ -82,7 +77,8 @@ const Education = () => {
 
   return (
     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-      <h3 className="text-xl font-bold mb-4">Education</h3>
+      <SubTitle>Education</SubTitle>
+
       <ul className="list-disc list-inside text-gray-300 space-y-2">
         <li>
           <Study
@@ -107,7 +103,7 @@ const Education = () => {
 const WorkExpirience = () => {
   const Position = ({ company, date, description }) => {
     return (
-      <div className="space-gray-4 text-gray-100 mb-4">
+      <div className="space-y-4 text-gray-100 mb-4">
         <h4 className="text-pink-700 font-semibold">{`${company} (${date})`}</h4>
         <p className="whitespace-pre-line text-xs">{description}</p>
       </div>
@@ -116,7 +112,7 @@ const WorkExpirience = () => {
 
   return (
     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-      <h3 className="text-xl font-bold mb-4">Work Experience</h3>
+      <SubTitle>Work Experience</SubTitle>
       <div className="space-gray-4 text-gray-100">
         <div>
           <Position
