@@ -14,22 +14,22 @@ export const SkillItem = ({ children }) => {
   );
 };
 
-// export const NavPrimaryButton = ({ children, navTo }) => {
-//   return (
-//     <a
-//       href={navTo}
-//       className="bg-[#e1144c] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(202,76,30,0.4)]"
-//     >
-//       {children}
-//     </a>
-//   );
-// };
-
-export const PrimaryButton = ({ children, navTo, onClick, className }) => {
+export const PrimaryButton = ({
+  children,
+  navTo,
+  onClick,
+  className,
+  onSubmit,
+}) => {
   const handleClick = (e) => {
     if (onClick) {
       e.preventDefault();
       onClick();
+    } else if (onSubmit) {
+      const form = e.currentTarget.closest("form");
+      if (currentTarget.closest("form") && form) {
+        form.requestSubmit();
+      }
     }
   };
 
@@ -44,11 +44,22 @@ export const PrimaryButton = ({ children, navTo, onClick, className }) => {
   );
 };
 
-export const SecondaryButton = ({ children, navTo, onClick, className }) => {
+export const SecondaryButton = ({
+  children,
+  navTo,
+  onClick,
+  className,
+  onSubmit,
+}) => {
   const handleClick = (e) => {
     if (onClick) {
       e.preventDefault();
       onClick();
+    } else if (onSubmit) {
+      const form = e.currentTarget.closest("form");
+      if (currentTarget.closest("form") && form) {
+        form.requestSubmit();
+      }
     }
   };
 
@@ -62,16 +73,23 @@ export const SecondaryButton = ({ children, navTo, onClick, className }) => {
     </a>
   );
 };
+
 export const TertiaryButton = ({
   children,
   navTo,
   onClick,
   className = "",
+  onSubmit,
 }) => {
   const handleClick = (e) => {
     if (onClick) {
       e.preventDefault();
       onClick();
+    } else if (onSubmit) {
+      const form = e.currentTarget.closest("form");
+      if (currentTarget.closest("form") && form) {
+        form.requestSubmit();
+      }
     }
   };
 
