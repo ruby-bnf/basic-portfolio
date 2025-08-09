@@ -62,9 +62,9 @@ body {
   width: 500px;
   aspect-ratio: 1/1;
   background: linear-gradient(
-    rgba(187, 61, 15, 0.599),
-    rgba(175, 63, 255, 0.651),
-    rgba(244, 32, 145, 0.629)
+    rgba(122, 75, 165, 0.599),
+    rgba(152, 42, 102, 0.651),
+    rgba(102, 46, 95, 0.629)
   );
   filter: blur(50px);
   border-radius: 30% 70% 70% / 30% 40% 70% 70%;
