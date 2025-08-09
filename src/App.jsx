@@ -21,6 +21,9 @@ const App = () => {
             isLoading ? "opacity-100" : "opacity-0"
           } bg-black text-gray-100`}
         >
+          <div className="blob-container">
+            <div className="blob"></div>
+          </div>
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <Home />
