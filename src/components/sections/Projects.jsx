@@ -26,6 +26,12 @@ export const Projects = () => {
               ]}
             />
             <Project
+              name={"Netflix Clone"}
+              description={"A small project to improve technical skills"}
+              skills={["React", "JavaScript", "CSS", "HTML"]}
+              link={"https://github.com/ruby-bnf/netflix_clone"}
+            />
+            <Project
               name={"Unity 2d Game"}
               description={
                 "Small 2d game created in unity. I redesigned the visuals and code to the game (using C#). with additional fun features."
@@ -38,7 +44,6 @@ export const Projects = () => {
                 "maintaining a flask application focused on SQL querying and api"
               }
               skills={["Flask API", "Python", "sqlalchemy", "Unit test"]}
-              link={"plaveHolderehere!"}
             />
           </div>
         </div>
