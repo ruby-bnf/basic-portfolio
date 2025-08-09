@@ -1,12 +1,16 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { PrimaryButton, SecondaryButton } from "../common";
+import "../../Index.css";
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative "
     >
+      <div className="blob-container">
+        <div className="blob"></div>
+      </div>
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-red-500 to-pink-700 bg-clip-text leading-right text-transparent">
