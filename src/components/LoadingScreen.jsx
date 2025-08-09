@@ -4,7 +4,7 @@ import { SecondaryButton } from "./common";
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
 
-  const fullText = `\n> Loading...      .  . . \n> Loading... .   .\n> Loa...\n> just kidding!> `;
+  const fullText = `\n> attempting to look cool... \n > please keep the screen open`;
 
   useEffect(() => {
     let index = -1;
@@ -39,7 +39,7 @@ export const LoadingScreen = ({ onComplete }) => {
   return (
     <div className="fixed inset-0 z-50 bg-black text-gray-100 relative">
       <div className="flex flex-col items-center justify-center h-screen">
-        <div className="whitespace-pre-line mb-4 text-4xl font-mono font-bold">
+        <div className="description whitespace-pre-line mb-4 text-4xl font-mono font-bold">
           {text} <span className="animate-blink ml-1"> | </span>
         </div>
 

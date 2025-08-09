@@ -4,7 +4,7 @@ export const NavbarItem = ({ name, componentId }) => {
   return (
     <a
       href={`#${componentId}`} // Correct: Add hash here
-      className="text-gray-300 hover:text-white transition-colors"
+      className="description hover:font-semibold text-gray-300 hover:text-pink-700 transition-colors"
     >
       {name}
     </a>
@@ -22,7 +22,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div className="flex justify-between items-center h-16">
           <a
             href="#home"
-            className="discription font-mono text-xl font-bold text-white"
+            className="description font-mono text-xl font-bold text-white"
           >
             ruby<span className="text-[#e1144c]">.bnf</span>
             {""}

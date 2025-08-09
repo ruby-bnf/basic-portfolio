@@ -48,7 +48,7 @@ const FormMessageItem = ({ placeholderMessage }) => {
       required
       rows={5}
       placeholder={placeholderMessage}
-      className="discription whitespace-pre-line w-full bg-white/5 border-2 border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-pink-700 focus:bg-pink-700/10"
+      className="description whitespace-pre-line w-full bg-white/5 border-2 border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-pink-700 focus:bg-pink-700/10"
     />
   );
 };
@@ -59,7 +59,7 @@ const FormItem = ({ id, placeholder, type }) => {
       type={type}
       id={id}
       required
-      className="discription w-full bg-white/5 border-2 border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-pink-700 focus:bg-pink-700/10"
+      className="description w-full bg-white/5 border-2 border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-pink-700 focus:bg-pink-700/10"
       placeholder={placeholder}
     />
   );

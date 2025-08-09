@@ -82,7 +82,7 @@ const ListItem = ({ title, description, date }) => {
       <span className="text-pink-700 font-semibold mb-1">
         {`${title} (${date[0]} - ${date[1]})`}
       </span>{" "}
-      <p className="discription whitespace-pre-line text-gray-400 text-sm mb-6">
+      <p className="description whitespace-pre-line text-gray-400 text-sm mb-6">
         {description}
       </p>
     </li>

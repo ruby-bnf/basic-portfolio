@@ -55,7 +55,7 @@ const Project = ({ name, description, skills, link }) => {
   return (
     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-pink-700/30 hover:shadow-[0_2px_8px_rgba(236,72,153,0.1)] transition">
       <SubTitle>{name}</SubTitle>
-      <p className="discription text-gray-400 mb-4">{description}</p>
+      <p className="description text-gray-400 mb-4">{description}</p>
       <div className="flex flex-wrap gap-2">
         {skills.map((tech, key) => (
           <SkillItem key={key}>{tech}</SkillItem>

@@ -18,7 +18,7 @@ h1.darken-text {
   transition: color 0.5s ease;
 }
 
-.discription {
+.description {
   font-family: "Space Mono", monospace;
 }
 
@@ -61,6 +61,7 @@ h1.darken-text {
   opacity: 1;
   transform: translateY(0);
 }
+
 .blob-container {
   position: fixed;
   inset: 0;
@@ -175,17 +176,3 @@ h1.darken-text {
     width: 250px;
   }
 }
-/* @keyframes blobClipMove {
-  0%,
-  100% {
-    clip-path: circle(150px at 50% 50%);
-  }
-  50% {
-    clip-path: circle(150px at 60% 55%);
-  }
-} */
-
-/* .top-black-text {
-  animation: blobClipMove 18s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite
-    alternate;
-} */
